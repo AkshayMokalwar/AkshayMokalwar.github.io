@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Q&A Just Aks Quora clone</h1>
+    {% if records %}
+    <!-- {{records}} -->
+    <table border="1">
+
+
+    {% for UserID ,UserFirstName,UserLastName,UserNumber,UserEmail,UserPass ,UserAdd,UserProfilePic ,UserDOB,UserGender in records%}
+
+  <tr>
+      <td>{{UserID}}</td>
+        <td>{{UserFirstName}} {{UserLastName}}</td>
+          <td>{{UserNumber}}</td>
+            <td>{{UserEmail}}</td>
+              <td>{{UserAdd}}</td>
+                <td>{{UserDOB}}</td>
+                  <td>{{UserGender}}</td>
+    </tr>
+
+    {%endfor%}
+  </table>
+    {%endif%}
+    <br>
+
+    {% block content %}
+    {% if ques %}
+    {% for QuesID,UserQID,QuesTXT,QuesDT,QuesKeyw in ques %}
+    <a href="/ques/{{QuesID}}/">{{QuesTXT}}</a><br>
+    {%endfor%}
+    {%else%}<p>No Questions Found !!</p>
+      {%endif%}
+
+      {% endblock %}
+  </body>
+</html>

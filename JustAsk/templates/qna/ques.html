@@ -1,0 +1,23 @@
+{% extends 'qna/index.html' %}
+
+{% block content %}
+<h1>QUES</h1>
+<b>question:
+{%if ques%}
+{{ques}}
+</b>
+{%if ans%}
+<br>
+
+{%for a in ans%}
+<b>Answers :</b><i>
+{{a}}</i><br>
+
+{%endfor%}
+
+{%endif%}
+
+{%endif%}
+
+
+{%endblock%}
