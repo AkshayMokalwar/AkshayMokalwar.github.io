@@ -1,7 +1,4 @@
 Django==3.1.6
 mysqlclient
-<<<<<<< HEAD
 gunicorn
 django-heroku
-=======
->>>>>>> d8c11c4d7b73ec9229ec48641f53980ab6e7b57c
