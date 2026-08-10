@@ -1,3 +1,0 @@
-Name,Birthday
-JohnDoe,2000-09-07
-JaneSmith,1995-12-15
