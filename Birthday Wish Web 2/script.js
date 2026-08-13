@@ -7,7 +7,7 @@ const birthdayWishes = [
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const targetName = urlParams.get('name') || 'JohnDoe';
+    const targetName = urlParams.get('name') || 'Achal';
 
     initCelebration(targetName);
 });
@@ -21,7 +21,7 @@ async function initCelebration(targetName) {
 
     // 3. Fetch and setup person data
     const personData = await fetchCSVData(targetName);
-
+    console.log('Fetched Person Data:', personData);
     if (personData) {
         document.getElementById('greeting-name').innerText = `Happy Birthday, ${personData.Name}!`;
         document.getElementById('birthday-date').innerText = personData.Birthday ? `Born on: ${personData.Birthday}` : '';
