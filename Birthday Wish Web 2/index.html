@@ -24,21 +24,29 @@
 
     <!-- Main Celebration Area -->
     <main class="celebration-container">
-        <h1 class="glowing-text" id="greeting-name">Loading...</h1>
-        <p class="pulsing-text" id="birthday-date"></p>
-
-        <!-- Slideshow Container -->
-        <div class="slideshow-container" id="slideshow">
-            <img id="slideshow-img" src="" alt="Birthday Person" style="display: none;">
-            <div class="slideshow-fallback" id="slideshow-fallback">
-                <p>Loading memories...</p>
-            </div>
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1 class="glowing-text" id="greeting-name">Loading...</h1>
+            <p class="pulsing-text" id="birthday-date"></p>
         </div>
 
-        <!-- Handwritten Paper Wish -->
-        <div class="wish-container" id="wish-container">
-            <img src="https://img.icons8.com/parakeet/48/quill-pen.png" alt="feather pen" class="quill-icon"/>
-            <p class="handwritten-wish" id="handwritten-wish"></p>
+        <!-- Layout Wrapper (Side-by-side on Landscape, Stacked on Mobile) -->
+        <div class="content-wrapper">
+            <!-- Slideshow Container -->
+            <div class="slideshow-container" id="slideshow">
+                <img id="slideshow-img" src="" alt="Birthday Person" style="display: none;">
+                <div class="slideshow-fallback" id="slideshow-fallback">
+                    <p>Loading memories...</p>
+                </div>
+            </div>
+
+            <!-- Handwritten Paper Wish -->
+            <div class="wish-container" id="wish-container">
+                <img src="https://img.icons8.com/parakeet/48/quill-pen.png" alt="feather pen" class="quill-icon" id="quill-icon"/>
+                <div class="wish-wrapper">
+                    <p class="handwritten-wish" id="handwritten-wish"></p>
+                </div>
+            </div>
         </div>
     </main>
 
