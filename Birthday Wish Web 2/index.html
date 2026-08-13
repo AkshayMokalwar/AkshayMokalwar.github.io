@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
+    <!-- Relative CSS Link -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Font for Handwritten Wish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti Library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    <!-- Top Marquee Bar -->
     <div class="marquee-container">
         <div class="marquee-content">
             🎉 Happy Birthday! 🎂 Let's Celebrate! 🎈 Wishing you all the best! 🥳
@@ -15,20 +22,30 @@
         </div>
     </div>
 
+    <!-- Main Celebration Area -->
     <main class="celebration-container">
         <h1 class="glowing-text" id="greeting-name">Loading...</h1>
         <p class="pulsing-text" id="birthday-date"></p>
 
+        <!-- Slideshow Container -->
         <div class="slideshow-container" id="slideshow">
             <img id="slideshow-img" src="" alt="Birthday Person" style="display: none;">
             <div class="slideshow-fallback" id="slideshow-fallback">
                 <p>Loading memories...</p>
             </div>
         </div>
+
+        <!-- Handwritten Paper Wish -->
+        <div class="wish-container" id="wish-container">
+            <img src="https://img.icons8.com/parakeet/48/quill-pen.png" alt="feather pen" class="quill-icon"/>
+            <p class="handwritten-wish" id="handwritten-wish"></p>
+        </div>
     </main>
 
+    <!-- Floating Balloons Layer -->
     <div id="balloon-container"></div>
 
+    <!-- Relative JS Link -->
     <script src="script.js"></script>
 </body>
 </html>
