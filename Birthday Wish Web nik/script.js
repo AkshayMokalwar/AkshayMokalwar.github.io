@@ -31,8 +31,8 @@ async function initCelebration(targetName) {
     } else {
         document.getElementById('greeting-name').innerText = "Happy Birthday!";
         document.getElementById('birthday-date').innerText = "Wishing you a fantastic year ahead!";
-        startSlideshow(targetName || 'Nikita');
-        setupHandwrittenWish("Nikita");
+        startSlideshow(targetName || 'Friend');
+        setupHandwrittenWish("Friend");
     }
 }
 
